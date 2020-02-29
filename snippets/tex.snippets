@@ -67,7 +67,7 @@ snippet \ unnumbered equation: \[ ... \]
 # Equation array
 snippet eqnarray eqnarray environment
 	\\begin{eqnarray}
-		${0:${VISUAL}} &=& \\\\
+	${1} &=& ${2} \\\\
 	\\end{eqnarray}
 # Label
 snippet lab \label
@@ -286,6 +286,8 @@ snippet frac \frac{}{}
 	\\frac{${1:num}}{${2:denom}} ${0}
 snippet sum \sum^{}_{}
 	\\sum^{${1:n}}_{${2:i=1}} ${0}
+snippet prod \prod^{}_{}
+	\\prod^{${1:n}}_{${2:i=1}} ${0}
 snippet lim \lim_{}
 	\\lim_{${1:n \\to \\infty}} ${0}
 snippet frame frame environment
